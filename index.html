@@ -35,7 +35,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link d-flex align-items-center p-3 border-bottom" href="#" onclick="nuevaImagen()">
+                                <a class="nav-link d-flex align-items-center p-3 border-bottom" href="#" onclick="document.getElementById('img').click()">
                                     <span class="me-2">🖼️</span> Imagen
                                 </a>
                             </li>
@@ -82,15 +82,8 @@
 
                         <!-- Image Upload -->
                         <div class="mb-3">
-                            <label for="imagen" class="form-label">Seleccionar imagen</label>
-                            <input type="file" id="imagen" class="form-control">
-                        </div>
-
-                        <!-- Action Button -->
-                        <div class="d-grid gap-2 mb-4">
-                            <button id="actionButton" class="btn btn-primary">
-                                Agregar contenido
-                            </button>
+                            <label for="img" class="form-label">Seleccionar imagen</label>
+                            <input type="file" id="img" class="form-control" onchange="cargarImagen(event)">
                         </div>
 
                         <!-- Preview Area -->
